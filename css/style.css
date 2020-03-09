@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Begin CSS for website */
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+/* Text styles */
+
+h1 {
+    font-size: 1.75em;
+    margin: 10x 0px;
+}
+
+h2 {
+    font-size: 1.50em;
+    margin: 10px 0px;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin: 10px 0px;
+}
+
+p {
+    font-size: 1em;
+}
+
+/* element styles */
+
+#nav-bar {
+ background-color: blue;
+ display: flex;
+ align-items:center;
+ justify-content: space-around;
+ padding: 5px;
+ height: 100px;
+ width: 100%;
+ position: fixed;
+ top: 0;
+ left:0;
+}
+
+.nav-group{
+    padding: 1em;
+}
+
+div.contact-button{
+    margin-top: 60px;
+}
+a.btn{
+    margin-top: 30px;
+    background-color: gold;
+    padding: 15px;
+    color: blue;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, gold 50%, blue 50%);
+    background-position: right bottom;
+    transition: all .75s ease-out;
+    border-radius: 5%;
+}
+
+a.btn:hover{
+    color: white;
+    background-position: 0 -100%;
+}
+
+
+#header-img {
+  height: 50%;
+}
+
+#nav-bar a {
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+section#home{
+  margin-top:100px;  
+}
+section {
+    padding: 1em;
+    width: 100%;
+    height: 75vh;
+    border-top: 2px solid black;
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    border-top: black;
+    background-color: blue;
+}
