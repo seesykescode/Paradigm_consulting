@@ -55,8 +55,17 @@ table {
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+    overflow: hidden
+}
 
 /* Text styles */
+
 
 body {
     font-family: 'Work Sans', sans-serif;
@@ -87,6 +96,33 @@ p {
     margin: 10px 0px;
 }
 
+/* content element styles */
+
+section {
+    padding: 1em;
+    width: 100%;
+    height: 50vh;
+    border-top: 2px solid white;
+    background-color: blue;
+    display: flex;
+    width: 100%;
+    flex-direction: row no-wrap;
+    align-items: center; 
+    align-content: center;
+}
+
+section#contact{
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    border-top: black;
+    background-color: white;
+}
 
 
 /* Navbar & header styles */
@@ -108,13 +144,27 @@ p {
     padding: 1em;
 }
 
+#header-img {
+    max-height: 50%;
+  }
+  
+  #nav-bar a {
+    color: black;
+    padding: 5px;
+    font-size: 22px;
+    text-decoration: none;
+  }
 
 /* Home section styles */
 
+section#home > div {
+    margin: 0% auto;
+}
+
 img.hero-img{
     margin-top: 25px;
-    height: 900px;
-    width: 500px;
+    height: 400px;
+    max-height: 50%;
     animation: rotate 5s infinite ease-out;
     padding: 20px;
 }
@@ -154,53 +204,7 @@ a.btn:hover{
 }
 
 
-#header-img {
-  height: 50%;
-}
-
-#nav-bar a {
-  color: black;
-  padding: 5px;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-
-
-
-
-
-/* section styles */
-
-section {
-    padding: 1em;
-    width: 100%;
-    height: 85vh;
-    border-top: 2px solid white;
-    background-color: blue;
-}
-
-section#home, section#about{
-  display: flex;
-  width: 100%;
-  flex-direction: row no-wrap;
-  align-items: center; 
-}
-
-section#contact{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-}
-
-footer{
-    width: 100%;
-    height: 20vh;
-    border-top: black;
-    background-color: navy;
-}
+/* About section styles */
 
 
 
