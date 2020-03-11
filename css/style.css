@@ -58,29 +58,40 @@ table {
 
 /* Text styles */
 
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Crimson Text', serif;
+   }
+
 h1 {
-    font-size: 1.75em;
+    font-size: 3em;
     margin: 10x 0px;
 }
 
 h2 {
-    font-size: 1.50em;
+    font-size: 2.5em;
     margin: 10px 0px;
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 3.17em;
     margin: 10px 0px;
 }
 
 p {
-    font-size: 1em;
+    font-size: 22px;
+    margin: 10px 0px;
 }
 
-/* element styles */
 
+
+/* Navbar & header styles */
 #nav-bar {
- background-color: blue;
+ background-color: White;
  display: flex;
  align-items:center;
  justify-content: space-around;
@@ -90,11 +101,33 @@ p {
  position: fixed;
  top: 0;
  left:0;
+ z-index: 2;
 }
 
 .nav-group{
     padding: 1em;
 }
+
+
+/* Home section styles */
+
+img.hero-img{
+    margin-top: 25px;
+    height: 900px;
+    width: 500px;
+    animation: rotate 5s infinite ease-out;
+    padding: 20px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
 
 div.contact-button{
     margin-top: 60px;
@@ -103,19 +136,20 @@ a.btn{
     margin-top: 30px;
     background-color: gold;
     padding: 15px;
-    color: blue;
+    color: whitesmoke;
     font-size: 30px;
     text-decoration: none;
     text-transform: uppercase;
     background-size: 200% 100%;
-    background-image: linear-gradient(to left, gold 50%, blue 50%);
+    background-image: linear-gradient(to left, gold 50%, white 50%);
     background-position: right bottom;
     transition: all .75s ease-out;
-    border-radius: 5%;
 }
 
+
+
 a.btn:hover{
-    color: white;
+    color: black;
     background-position: 0 -100%;
 }
 
@@ -125,26 +159,59 @@ a.btn:hover{
 }
 
 #nav-bar a {
-  color: white;
+  color: black;
   padding: 5px;
   font-size: 20px;
   text-decoration: none;
 }
 
 
-section#home{
-  margin-top:100px;  
-}
+
+
+
+
+/* section styles */
+
 section {
     padding: 1em;
     width: 100%;
-    height: 75vh;
-    border-top: 2px solid black;
+    height: 85vh;
+    border-top: 2px solid white;
+    background-color: blue;
+}
+
+section#home, section#about{
+  display: flex;
+  width: 100%;
+  flex-direction: row no-wrap;
+  align-items: center; 
+}
+
+section#contact{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 
 footer{
     width: 100%;
     height: 20vh;
     border-top: black;
-    background-color: blue;
+    background-color: navy;
 }
+
+
+
+
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
